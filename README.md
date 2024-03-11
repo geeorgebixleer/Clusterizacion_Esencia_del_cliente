@@ -28,6 +28,6 @@ Asignación de mecanismo codificación mediante la sustitución de valores, lo c
 Aplicación de algortmo de clusterización KMeans y obtención de puntajes para las métricas: 'Inercia', 'Silhouette', 'Davies-Bouldin' y 'Calinski and Harabasz' para evaluar la calidad de los resultados del modelo. Paso seguido, el algoritmo de clusterización es instanciado con la configuración del número de clusters seleccionada, lo que indica el cluster perteneciente a cada cliente como un nuevo atributo en el dataset. Adicionalmente, se realizan gráficos de dispersión para comparar las variables y describir las características de cada cluster.
 
 #### 6. Análisis e interpretación de clusters: 🤖
-Finalmente, se incluye la descripción para cada cluster, incluyendo recomendaciones y estrategias para mejorar y personalizar la experiencia de los clientes. 
+Finalmente, se incluye la descripción para cada cluster, así como recomendaciones y estrategias para mejorar y personalizar la experiencia de los clientes. 
 
 ![](https://github.com/geeorgebixleer/Esencia-del-cliente-Alura-Challenge/blob/main/Challenge_3.png)
