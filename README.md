@@ -1,9 +1,8 @@
 ### Alura Challenge: Esencia del cliente 🛒🚦
-Segmentación de clientes mediante la ténica de clusterización
 
-*Esencia del cliente* es un algoritmo de decisión simple automatizado capaz de tomar decisiones de compra y venta de Bitcoin en tiempo real y está desarrollado en el entorno virtual Google Colaboratory.
+*Esencia del cliente* es un algoritmo que permite segmentar a los clientes de un supermercado de acuerdo a sus hábitos mediante la clusterización: técnica de machine learning que implica inteligencia artificial. 
 
-El resultado de este código será un gráfico mostrando un periodo de los ultimos 7 días del precio BTC-USD y la decisión del algoritmo en tiempo real, basado en datos que se actualizarán cada 5 minutos.
+Dicha asignación permiten comprender las necesidades y hábitos de consumo de los clientes, de modo que, pueden tomarse decisiones de negocio en pro de favorecer la interacción clientes-supermercado, buscando satisfacer y generar mayor fidelidad, a la vez que se garantiza el éxito de la empresa. 
 
 ### **Librerias utilizadas:**
 - *Pandas*
@@ -13,22 +12,22 @@ El resultado de este código será un gráfico mostrando un periodo de los ultim
 - *Scikit-Learn*
 
 #### 1. Configuración del ambiente:  ⚙
-Importando librerías esenciales como Pandas, Numpy, Matplotlib, etc.
+Instalando librerías que serán necesarias para el deasarrollo del proyecto.
 
-#### 2. Obtención de datos: ⛏
- - Recopilación de datos de los ultimos 7 días de BTC-USD en formato JSON mediante la API yfinance.
- - Extracción de precio actual y de indicadores de alta y baja del precio en la ultima hora, mediante Web Scraping en sitio de noticias (https://coinmarketcap.com/)
+#### 2. Obtención y transformación de datos: ⛏
+ - Adaptación de la base de datos para la interacción y transformación de los datos.
+ - La base de datos original se encuentra disponible en Kaggle a través del siguiente enlace: https://www.kaggle.com/datasets/ramjasmaurya/medias-cost-prediction-in-foodmart
 
-#### 3. Limpieza de datos: 🧹
-Transformación a Dataframe para la identificación y eliminación de outliers y tratamiento de valores nulos. Obtención del precio promedio del Bitcoin.
+#### 3. Exploración de datos: 🧹
+Aplicación de bibliotecas Matplotlib y Seaborn para generar algunas visualizaciones que permiten entender la composición del dataset e identificar características importantes, como son valores atípicos, distribuciones, correlaciones y agrupaciones.
 
-#### 4. Tomar decisiones: 🤔
-Algoritmo de decisión que compara el precio actual y la tendencia. Si el precio es mayor/igual que la media y la tendencia es de baja, entonces se debe vender, pero si el precio actual es menor que la media y la tendencia es de alta, entonces se debe comprar.
+#### 4. Procesamiento y obtención de features: 🤔
+Asignación de mecanismo codificación mediante la sustitución de valores, lo cuál, permite al algoritmo de clusterización entender el conjunto el datos que será procesado. Posteriormente, reducción de la dimensión del dataset mediante la selección de las variables categóricas que mejor representan el conjunto de datos, seguidamente, estandarización de los datos a la misma escala mediante StandardScaler.
 
-#### 5. Visualización: 📈
-Creación de gráfico que muestra la evolución del precio BTC-USD durante el periodo de 7 días implementando la librería Matplotlib. Se genera una línea recta que muestra el precio medio y se imprime un mensaje en el gráfico con la acción a realizar “Vender”, “Comprar” o “Esperar".
+#### 5. Validación de clusters: 📈
+Aplicación de algortmo de clusterización KMeans y obtención de puntajes para las métricas: 'Inercia', 'Silhouette', 'Davies-Bouldin' y 'Calinski and Harabasz' para evaluar la calidad de los resultados del modelo. Tras hallar la mejor configuración para tus clusters, procederás a instanciarlo..
 
-#### 6. Automatización: 🤖
-Ejecución automatizada de las funciones, adicionando la librería "time" para ejecutar cada 5 minutos y actualizar el gráfico.
+#### 6. Análisis e interpretación de clusters: 🤖
+Finalmente, el algoritmo de clusterización es instanciado con la configuración del número de clusters seleccionada, lo que indica el cluster perteneciente a cada cliente como un nuevo atributo en el dataset. Adicionalmente, se realizan gráficos de dispersión para comparar las variables y describir las características de cada cluster.
 
-![](https://github.com/geeorgebixleer/robot-trading-BTC-USD/blob/main/insignia_robot_trading.png)
+![](https://github.com/geeorgebixleer/Esencia-del-cliente-Alura-Challenge/blob/main/Challenge_3.png)
