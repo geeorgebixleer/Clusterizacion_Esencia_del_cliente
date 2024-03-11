@@ -30,4 +30,4 @@ Aplicación de algortmo de clusterización KMeans y obtención de puntajes para 
 #### 6. Análisis e interpretación de clusters: 🤖
 Finalmente, se incluye la descripción para cada cluster, así como recomendaciones y estrategias para mejorar y personalizar la experiencia de los clientes. 
 
-![](https://github.com/geeorgebixleer/Esencia-del-cliente-Alura-Challenge/blob/main/Challenge_3.png)
+![](https://github.com/geeorgebixleer/Esencia-del-cliente-Alura-Challenge/blob/main/esencia_cliente.png)
