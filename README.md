@@ -25,9 +25,9 @@ Aplicación de bibliotecas Matplotlib y Seaborn para generar algunas visualizaci
 Asignación de mecanismo codificación mediante la sustitución de valores, lo cuál, permite al algoritmo de clusterización entender el conjunto el datos que será procesado. Posteriormente, reducción de la dimensión del dataset mediante la selección de las variables categóricas que mejor representan el conjunto de datos, seguidamente, estandarización de los datos a la misma escala mediante StandardScaler.
 
 #### 5. Validación de clusters: 📈
-Aplicación de algortmo de clusterización KMeans y obtención de puntajes para las métricas: 'Inercia', 'Silhouette', 'Davies-Bouldin' y 'Calinski and Harabasz' para evaluar la calidad de los resultados del modelo. Tras hallar la mejor configuración para tus clusters, procederás a instanciarlo..
+Aplicación de algortmo de clusterización KMeans y obtención de puntajes para las métricas: 'Inercia', 'Silhouette', 'Davies-Bouldin' y 'Calinski and Harabasz' para evaluar la calidad de los resultados del modelo. Paso seguido, el algoritmo de clusterización es instanciado con la configuración del número de clusters seleccionada, lo que indica el cluster perteneciente a cada cliente como un nuevo atributo en el dataset. Adicionalmente, se realizan gráficos de dispersión para comparar las variables y describir las características de cada cluster.
 
 #### 6. Análisis e interpretación de clusters: 🤖
-Finalmente, el algoritmo de clusterización es instanciado con la configuración del número de clusters seleccionada, lo que indica el cluster perteneciente a cada cliente como un nuevo atributo en el dataset. Adicionalmente, se realizan gráficos de dispersión para comparar las variables y describir las características de cada cluster.
+Finalmente, se incluye la descripción para cada cluster, incluyendo recomendaciones y estrategias para mejorar y personalizar la experiencia de los clientes. 
 
 ![](https://github.com/geeorgebixleer/Esencia-del-cliente-Alura-Challenge/blob/main/Challenge_3.png)
